@@ -5,10 +5,9 @@
 [v] put both into repos
 
 -- backend --
-[_] list backend tasks
-[_] make backend
-[_] make tests
-[_] push to railway
+[v] list backend tasks in the backend's txt
+[v] email already taken
+[v] complete them
 
 -- frontend --
 [v] make mockups of login page and landing page
@@ -16,17 +15,24 @@
 [v] make login page
 [v] make landing page
 [v] sign up page
-[_] push to GH pages
-[_] read the task: what is required from form validation?
-[_] form validation for log in
-[_] form validation for sign up
-[_] form cleaning for both - remove code and spaces
-[_] research form validating react libraries and briefly summarize in notes
-
+[v] push to GH pages
+[v] read the task: what is required from form validation?
+[_] connect FE and BE
+[_] frontend form validation and feedback
+- 8 characters pw, with 1 number and 1 symbol
+- 2 characters first name
+- 2 characters last name
+- email format
+- matching password and confirm password
+- backend errors showing up in frontend
+[_] see the list of all users in landing page
 [_] ui design with shadcn and tailwind
+[_] responsive - mobile
 [_] change frontend page title and favicon
 
-[_] make tests for everything the app should have:
+-- both --
+[_] make backend tests with DB mocks
+[_] make frontend tests:
 - rendering all headings
 - rendering forms
 - rendering user data correctly on log in
@@ -36,6 +42,22 @@
 - button functionality to sign up
 - button functionality to log out
 
--- both --
-[_] connect the two
 [_] change readmes
+[_] test everything
+
+[_] update my personal documentation setup:
+- add vitest, its setup, sample test
+- add how to run / test in browser / run tests:
+    docker compose up -d
+    docker compose exec app npm run test
+    docker compose down -v
+- package.json
+    "type": "module",
+- tsconfig.json
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+- remove __dirnames
+- add ".js" to route/controller/util imports
+- Dockerfile:
+    FROM node:20-bookworm
