@@ -1,20 +1,36 @@
+// dependencies
 import { useState } from 'react';
 import './App.css';
 
+// components
+import type { userInfo } from './lib/userInfo';
+import Landing from './components/landing';
+import Login from './components/login';
+
 function App() {
-  const [count, setCount] = useState(0);
+  const [loggedIn, setLoggedIn] = useState<boolean>(false);
+  const [userInfo, setUserInfo] = useState<userInfo | null>(null);
+
+  const handleLogout = () => {
+    setUserInfo(null);
+    setLoggedIn(false);
+  };
 
   return (
     <>
-      <h1>Travel Agency</h1>
-      <div className="card">
-        <button
-          className="p-5 bg-accent rounded shadow-2xl hover:bg-amber-800"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </button>
-      </div>
+      <h1 className="text-2xl">Welcome to Travel Agency</h1>
+      {!loggedIn && (
+        <Login
+          setUserInfoCallback={setUserInfo}
+          setLoggedInCallback={setLoggedIn}
+        />
+      )}
+      {loggedIn && userInfo && (
+        <div>
+          <Landing fullName={userInfo.fullName} email={userInfo.email} />
+          <button onClick={handleLogout}>Log out</button>
+        </div>
+      )}
     </>
   );
 }

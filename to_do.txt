@@ -2,23 +2,40 @@
 [v] install shadcn and tailwind
 [v] install vitest
 [v] make backend with docker and psql
-[_] put both into repos
-
--- frontend --
-[_] make tests
-[_] make login page
-[_] form validation
-[_] make landing page
-[_] ensure tests are good
-[_] push to GH pages
+[v] put both into repos
 
 -- backend --
+[_] list backend tasks
 [_] make backend
 [_] make tests
 [_] push to railway
 
+-- frontend --
+[v] make mockups of login page and landing page
+[v] make a type module for user data
+[v] make login page
+[v] make landing page
+[v] sign up page
+[_] push to GH pages
+[_] read the task: what is required from form validation?
+[_] form validation for log in
+[_] form validation for sign up
+[_] form cleaning for both - remove code and spaces
+[_] research form validating react libraries and briefly summarize in notes
+
+[_] ui design with shadcn and tailwind
+[_] change frontend page title and favicon
+
+[_] make tests for everything the app should have:
+- rendering all headings
+- rendering forms
+- rendering user data correctly on log in
+- forms being interactible
+- wrong stuff being not accepted by the forms
+- button functionality to log in
+- button functionality to sign up
+- button functionality to log out
+
 -- both --
 [_] connect the two
-[_] change frontend page title and favicon
-[_] ui design
 [_] change readmes

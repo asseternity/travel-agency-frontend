@@ -7,6 +7,7 @@ import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  base: '/travel-agency-frontend/',
   plugins: [react(), tailwindcss()],
   server: {
     watch: {
