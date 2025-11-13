@@ -2,12 +2,18 @@ import { render, screen } from '@testing-library/react';
 import Landing from './landing';
 
 // mock user props
-const fullName: string = 'John Johnson';
+const full_name: string = 'John Johnson';
 const email: string = 'john@example.com';
 
 describe('<Landing />', () => {
   it('renders the heading', () => {
-    render(<Landing fullName={fullName} email={email} />);
+    render(
+      <Landing
+        full_name={full_name}
+        email={email}
+        setLoadingCallback={vi.fn()}
+      />
+    );
     expect(
       screen.getByRole('heading', { name: 'Landing page' })
     ).toBeInTheDocument();

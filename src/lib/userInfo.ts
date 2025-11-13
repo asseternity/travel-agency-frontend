@@ -1,4 +1,4 @@
 export type userInfo = {
-  fullName: string;
+  full_name: string;
   email: string;
 };

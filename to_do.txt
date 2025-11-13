@@ -17,20 +17,26 @@
 [v] sign up page
 [v] push to GH pages
 [v] read the task: what is required from form validation?
-[_] connect FE and BE
-[_] frontend form validation and feedback
+[v] connect FE and BE
+[v] manual login
+[v] sign up
+[v] list of users in landing
+[v] token and auto login
+[v] logout and deletion of token
+[V] frontend form validation and error feedback
 - 8 characters pw, with 1 number and 1 symbol
 - 2 characters first name
 - 2 characters last name
 - email format
 - matching password and confirm password
 - backend errors showing up in frontend
-[_] see the list of all users in landing page
-[_] ui design with shadcn and tailwind
-[_] responsive - mobile
-[_] change frontend page title and favicon
+[v] error on login
+[v] errors on typing in signup
+[v] ui design with shadcn and tailwind
+[v] responsive - mobile
+[v] change frontend page title and favicon
 
--- both --
+-- tests --
 [_] make backend tests with DB mocks
 [_] make frontend tests:
 - rendering all headings
@@ -42,22 +48,7 @@
 - button functionality to sign up
 - button functionality to log out
 
+-- polish touches --
+[_] delete extra users
 [_] change readmes
 [_] test everything
-
-[_] update my personal documentation setup:
-- add vitest, its setup, sample test
-- add how to run / test in browser / run tests:
-    docker compose up -d
-    docker compose exec app npm run test
-    docker compose down -v
-- package.json
-    "type": "module",
-- tsconfig.json
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-- remove __dirnames
-- add ".js" to route/controller/util imports
-- Dockerfile:
-    FROM node:20-bookworm
