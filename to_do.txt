@@ -37,8 +37,7 @@
 [v] change frontend page title and favicon
 
 -- tests --
-[_] make backend tests with DB mocks
-[_] make frontend tests:
+[v] make frontend tests:
 - rendering all headings
 - rendering forms
 - rendering user data correctly on log in
@@ -47,8 +46,9 @@
 - button functionality to log in
 - button functionality to sign up
 - button functionality to log out
+[v] make backend tests with DB mocks
 
 -- polish touches --
-[_] delete extra users
-[_] change readmes
-[_] test everything
+[v] change readmes
+[v] test everything
+[v] delete extra users
